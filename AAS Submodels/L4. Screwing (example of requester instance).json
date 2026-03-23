@@ -1,0 +1,35 @@
+{
+    "category": "CONSTANT",
+    "idShort": "Screwing",
+    "description": [{"language": "en", "text": "Submodel designed for encapsulating all screwing-related operations and metrics."}],
+    "id": "https://example.com/ids/sm/1035_2161_4052_4252",
+    "kind": "Instance",
+    "modelType": "Submodel",
+    "submodelElements": [
+        {
+            "category": "CONSTANT",
+            "idShort": "Torque",
+            "description": [{"language": "en", "text": "Collection containing all torque-related properties"}],
+            "modelType": "SubmodelElementCollection",
+            "value": [
+                {
+                    "category": "PARAMETER",
+                    "idShort": "RequiredTorque",
+                    "description": [{"language": "en", "text": "The required amount of torque value applied during the tightening process. This property is used by a product that requires a certain amount of torque to have a screw placed."}],
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                            {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/ids/cd/5383_1282_1052_6873"
+                            }
+                        ]
+                    },
+                    "valueType": "xs:float",
+                    "value": "7.5",
+                    "modelType": "Property"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "category": "CONSTANT",
+    "idShort": "Screwing",
+    "description": [{"language": "en", "text": "Submodel designed for encapsulating all screwing-related operations and metrics."}],
+    "id": "https://example.com/ids/sm/1035_2161_4052_4252",
+    "kind": "Instance",
+    "modelType": "Submodel",
+    "submodelElements": [
+        {
+            "category": "CONSTANT",
+            "idShort": "Bit",
+            "description": [{"language": "en", "text": "Collection designed to include bit data"}],
+            "modelType": "SubmodelElementCollection",
+            "value": [
+                {
+                    "category": "CONSTANT",
+                    "idShort": "Length",
+                    "description": [{"language": "en", "text": "Length of the bit measured in milimeters (mm)"}
+                    ],
+                    "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [{"type": "GlobalReference", "value": "0112/2///62720#UAA862#001"}]
+                    },
+                    "valueType": "xs:float",
+                    "value": "22.56",
+                    "modelType": "Property"
+                }
+            ]
+        }
+    ]
+}
