@@ -1,21 +1,76 @@
-# Capability Check - Artifacts
+# Capability Algorithms
 
-This repository is used to store artifacts related to the *capability check* system.
+Project for capability validation between AAS submodels, with automated testing support using `pytest`.
 
-The goal is to centralize files, documents, and other resources that support the execution, validation, and evolution of the system.
+## Requirements
 
-## Contents
+- Python 3.11+
+- Poetry
 
-* Two instances of an AAS (*Asset Administration Shell*) submodel, representing:
+## Installation
 
-  * The **provider** perspective
-  * The **requester** perspective
-    (both in JSON format)
+1. Install project dependencies:
 
-* A `.md` file containing prompt information for an AI agent
+```bash
+poetry install --with dev
+```
 
-* A file with the expected response from the agent, in JSON format
+2. Create the environment file:
 
-## Notes
+```bash
+cp .env.example .env
+```
 
-This repository does not necessarily contain the main system code, but rather complementary materials used in the *capability check* process.
+3. Edit `.env` with the minimum required values:
+
+- `OPENAI_API_KEY`
+- `LLM_MODEL`
+- `AI_API_BASE_URL`
+
+## Running tests
+
+Run the full test suite:
+
+```bash
+poetry run pytest
+```
+
+Run only one group:
+
+```bash
+poetry run pytest tests/group_1
+```
+
+Repeat each test 5 times (`pytest-repeat`):
+
+```bash
+poetry run pytest --count=5
+```
+
+## Parallel execution (optional)
+
+To use all workers with `-n auto`, install `pytest-xdist`:
+
+```bash
+poetry add --group dev pytest-xdist
+```
+
+Then run:
+
+```bash
+poetry run pytest -n auto
+```
+
+Or with repetition:
+
+```bash
+poetry run pytest -n auto --count=5
+```
+
+## Reports
+
+After execution, results are saved in:
+
+- `reports/<model_name>/results_YYYYMMDD_HHMMSS.json`
+- `reports/<model_name>/summary.txt`
+- `reports/<model_name>/benchmark_history.csv`

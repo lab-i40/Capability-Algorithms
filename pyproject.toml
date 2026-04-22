@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capability-algorithms"
+version = "0.1.0"
+description = "Capability checking algorithm and test suite"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pytest",
+  "pytest-asyncio",
+  "python-dotenv",
+  "openai",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest-repeat (>=0.9.4,<0.10.0)"
+]

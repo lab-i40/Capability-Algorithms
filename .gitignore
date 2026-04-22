@@ -294,3 +294,7 @@ npm-debug.log*
 *.swp
 *.bak
 *.orig
+
+# Reports (ignore only folder contents)
+reports/*
+!reports/.gitkeep
