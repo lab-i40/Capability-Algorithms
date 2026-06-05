@@ -24,8 +24,10 @@ After your reasoning, respond with a single valid JSON object:
     - auxiliary_capabilities: list of auxiliary capability entries ("CapabilityIdShort:CapabilityContainerIdShort") identified in the provided capabilities. Empty list if none.
     - match: true only if primary_capability is non-null.
 
+```
 {
   "primary_capability": "CapabilityIdShort:CapabilityContainerIdShort" | null,
   "auxiliary_capabilities": ["CapabilityIdShort:CapabilityContainerIdShort", ...],
   "match": bool
 }
+```
