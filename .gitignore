@@ -295,7 +295,7 @@ npm-debug.log*
 *.bak
 *.orig
 
-# Reports (report/, singular) — ignore generated aggregates; keep the folder
-report/confusion_matrix.csv
-report/diagnostic-case.csv
+# Reports (report/, singular) — keep the folder.
+# report/confusion_matrix.csv and report/diagnostic-case.csv are tracked on purpose
+# (they back the results reported in the paper); do NOT ignore them.
 !report/.gitkeep
