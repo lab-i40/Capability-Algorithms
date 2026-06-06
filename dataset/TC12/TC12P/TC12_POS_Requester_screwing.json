@@ -1,0 +1,905 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "BoardUMB",
+      "id": "https://example.com/ids/aas/boardumb/i-gran-pos-requester",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "https://example.com/assets/boardumb"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/sm/capability-description/i-gran-pos-requester/boardumb"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "CapabilityDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Informal Capability Description submodel. Terms are expressed mainly through names and short descriptions."
+        }
+      ],
+      "id": "https://example.com/ids/sm/capability-description/i-gran-pos-requester/boardumb",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/SubmodelTemplate/CapabilityDescription/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "CapabilitySet",
+          "description": [
+            {
+              "language": "en",
+              "text": "Groups the capability containers used in this test asset."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilitySet/1/0"
+              }
+            ]
+          },
+          "qualifiers": [],
+          "value": [
+            {
+              "idShort": "ScrewingRequestedContainer",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Container for one capability and its related information."
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityContainer/1/0"
+                  }
+                ]
+              },
+              "qualifiers": [],
+              "value": [
+                {
+                  "idShort": "Screwing",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Capability named Screwing, described by plain-language metadata in this test case."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [
+                    {
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityRoleQualifier/Required/1/0"
+                          }
+                        ]
+                      },
+                      "kind": "ValueQualifier",
+                      "type": "Required",
+                      "valueType": "xs:boolean",
+                      "value": "true"
+                    }
+                  ],
+                  "modelType": "Capability"
+                },
+                {
+                  "idShort": "ScrewingFastenerRequirementSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Groups fastener and thread-related values."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ThreadSystemContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ThreadSystem",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Fastener or thread value used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:string",
+                          "value": "Metric",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ThreadedFastenerTypeContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ThreadedFastenerType",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Fastener or thread value used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:string",
+                          "value": "MachineScrew",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ThreadDesignationContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ThreadDesignation",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Fastener or thread value used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:string",
+                          "value": "M6",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ThreadPitchContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ThreadPitch",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Thread pitch value expressed in millimetres."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "1.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "RequiredDriveInterfaceTypesContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "RequiredDriveInterfaceTypes",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Lists drive interface geometries accepted for the required screwing operation."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "typeValueListElement": "Property",
+                          "valueTypeListElement": "xs:string",
+                          "value": [
+                            {
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Plain-language property used to describe the capability."
+                                }
+                              ],
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "Phillips",
+                              "modelType": "Property"
+                            }
+                          ],
+                          "modelType": "SubmodelElementList"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "ScrewingTorqueRequirementSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Groups torque-related values for the capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "RequiredTorqueContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "RequiredTorque",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Torque value expressed in N\u00B7m."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "6.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "Point1RequirementSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Groups values used to describe the capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ScrewingCoordXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "30.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ScrewingCoordYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "32.5",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ScrewingCoordZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "22.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "Point2RequirementSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Groups values used to describe the capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ScrewingCoordXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "30.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ScrewingCoordYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "107.5",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ScrewingCoordZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "22.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "Point3RequirementSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Groups values used to describe the capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ScrewingCoordXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "110.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ScrewingCoordYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "32.5",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ScrewingCoordZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "22.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "Point4RequirementSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Groups values used to describe the capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ScrewingCoordXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "110.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ScrewingCoordYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "107.5",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "ScrewingCoordZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ScrewingCoordZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language property used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "value": "22.0",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

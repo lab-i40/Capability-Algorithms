@@ -1,0 +1,36 @@
+{
+    "test_id": "tc21p",
+    "matching_result": true,
+    "final_step": 2,
+    "sematic_matching_gt": {
+        "primary_capability": "Bolting:BoltingOfferedContainer",
+        "auxiliary_capabilities": [],
+        "match": true
+    },
+    "requirement_matching_gt": {
+        "ScrewingFastenerRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The offered Bolting capability provides compatible metric fastener support for the requested screwing requirement."
+        },
+        "ScrewingTorqueRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required torque is inside the offered torque range."
+        },
+        "Point1RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point2RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point3RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point4RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        }
+    }
+}
