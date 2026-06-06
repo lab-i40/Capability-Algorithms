@@ -25,7 +25,7 @@ def get_capability_set_from(filename: str, data: dict[str, Any]) -> list[dict[st
 
 
 async def main() -> None:
-    api_key = ""
+    api_key = os.environ["OPENAI_API_KEY"]
 
     data = load_tc00_example()
 
