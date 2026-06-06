@@ -25,7 +25,7 @@ def get_capability_set_from(filename: str, data: dict[str, Any]) -> list[dict[st
 
 
 async def main() -> None:
-    api_key = ""
+    api_key = "tgp_v1_fITvZ-dz6vZ8W1aEMZLk8F2hOUqOcct_ZdgGy4RPJtk"
 
     data = load_tc00_example()
 

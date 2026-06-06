@@ -1,0 +1,20 @@
+{
+    "test_id": "tc11p",
+    "matching_result": true,
+    "final_step": 2,
+    "sematic_matching_gt": {
+        "primary_capability": "CapabilityIdShort:CapabilityContainerIdShort",
+        "auxiliary_capabilities": ["CapabilityIdShort:CapabilityContainerIdShort"],
+        "match": true
+    },
+    "requirement_matching_gt": {
+        "propertySetIdShort": {
+            "verdict": "satisfied",
+            "justification": "<concise explanation of why the verdict was reached>"
+        },
+        "propertySetIdShort1": {
+            "verdict": "satisfied",
+            "justification": "<concise explanation of why the verdict was reached>"
+        }
+    }
+}
