@@ -2,7 +2,7 @@
 
 Reproduction package for the paper **"Large Language Models as a Decision-making Core for Semantic Capability Check in Asset Administration Shell-based Intelligent Manufacturing"**.
 
-This repository contains the source code, test dataset, and prompts used to evaluate LLM-based Capability Check across five open-weight models and 454 test cases.
+This repository contains the source code, test dataset, and prompts used to evaluate LLM-based Capability Check.
 
 **Repository DOI:** [10.5281/zenodo.19687682](https://doi.org/10.5281/zenodo.19687682)
 
@@ -10,18 +10,20 @@ This repository contains the source code, test dataset, and prompts used to eval
 
 ## About the Experiment
 
-The Capability Check algorithm determines whether a machine (AAS Provider) can fulfill a service request (AAS Requester) by semantically comparing two AAS capability submodels serialized as JSON. An LLM acts as the decision-making core, returning a structured JSON response with a `capable` boolean and a textual justification.
+The Capability Check algorithm determines whether a machine (AAS Provider) can fulfill a service request (AAS Requester) by semantically comparing AAS capability submodels serialized as JSON. It runs in two steps — Step 1 (semantic alignment via the DIN 8580 process taxonomy) and Step 2 (per-property requirement matching) — and returns a `CapabilityCheckResult` whose `matching` boolean is the final verdict.
 
-### Test Groups
+### Test Matrix
 
-The 454 test cases are organized into four groups, balanced with equal positive (`capable: true`) and negative (`capable: false`) cases:
+The suite is organized as a **matrix**: 4 abstraction dimensions × 2 formalism degrees = 8 scenarios, each with one positive (`P`, match) and one negative (`N`, no-match) case → **16 cases**, balanced 8 match / 8 no-match. IDs follow `TC<dimension><formalism>` (digit 1 = dimension, digit 2 = formalism):
 
-| Group | Name | Cases |
-|-------|------|-------|
-| G1 | Semantic Relationship between Capabilities | 102 |
-| G2 | Insufficient Inferential Evidence | 110 |
-| G3 | Limiting Properties and Parameterization | 106 |
-| G4 | Invalid or Inconsistent Data | 136 |
+| | Formal (1) | Informal (2) |
+|---|---|---|
+| **Granularity (1)** | `TC11` | `TC12` |
+| **Process (2)** | `TC21` | `TC22` |
+| **Product (3)** | `TC31` | `TC32` |
+| **Resource (4)** | `TC41` | `TC42` |
+
+Each `TC<n>` has leaf folders `TC<n>P` and `TC<n>N` under `dataset/`. The dataset (AAS documents + `*_ground_truth.json`) is authored and owned by the maintainer.
 
 ### Models Evaluated
 
@@ -66,15 +68,9 @@ cp .env.example .env
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `OPENAI_API_KEY` | Yes | API key for the inference provider (Together AI, Groq, OpenAI, etc.) |
-| `AI_API_BASE_URL` | Yes | Base URL of the inference server |
-| `LLM_MODEL` | Yes | Model identifier string (see examples in `.env.example`) |
+| `OPENAI_API_KEY` | Yes | Together AI API key. The model and base URL are fixed in `src/` (Together/Qwen), so only the key is injected (D1). |
 
-Example values for `AI_API_BASE_URL`:
-
-- Together AI: `https://api.together.xyz`
-- Groq: `https://api.groq.com/`
-- OpenAI: `https://api.openai.com`
+The suite makes real LLM calls only (no offline/mock path), so `OPENAI_API_KEY` is required to run it (including in CI).
 
 ---
 
@@ -86,10 +82,11 @@ Run the full test suite (single pass):
 poetry run pytest
 ```
 
-Run only one group:
+Run a subset of the matrix by test id (e.g. one scenario or one dimension):
 
 ```bash
-poetry run pytest tests/group_1
+poetry run pytest -k "TC11"     # both polarities of Formal × Granularity
+poetry run pytest -k "TC11P or TC11N"
 ```
 
 Repeat each test 5 times to match the paper's methodology (`pytest-repeat`):
@@ -116,10 +113,19 @@ poetry run pytest -n auto --count=5
 
 ## Reports
 
-After execution, results are saved under `reports/<model_name>/`:
+The suite does not assert pass/fail on the verdict — it executes each case and
+records the result, then derives correctness against the ground truth in the
+report layer. After execution, artifacts are written under `report/`:
 
-| File | Description |
+| Path | Description |
 |------|-------------|
-| `results_YYYYMMDD_HHMMSS.json` | Raw per-test results |
-| `summary.txt` | Aggregated accuracy and F1 Score |
-| `benchmark_history.csv` | Historical run log |
+| `report/TC<n>/TC<n>{P,N}/semantic_matching.md` | Step 1 result (JSON) + reasoning, per case |
+| `report/TC<n>/TC<n>{P,N}/requirement_matching.md` | Step 2 verdict + justification (per property set) + reasoning, per case |
+| `report/confusion_matrix.csv` | 2×2 counts (TP/FN/FP/TN); class positive = match |
+| `report/diagnostic-case.csv` | One row per case: `test_id,dimension,formalism,ground_truth,predicted,situation,timestamp` |
+
+`situation` follows the diagnostic taxonomy of `test_2.tex`:
+`correct-clean` / `correct-with-recovery` / `incorrect` (plus `error` for runs
+that raised an exception, which are excluded from the confusion matrix). Outcome
+accuracy = `correct-clean` + `correct-with-recovery`; path accuracy =
+`correct-clean`.
