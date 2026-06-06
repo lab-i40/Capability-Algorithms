@@ -1,0 +1,2004 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "CuttingCell",
+      "id": "https://example.com/ids/aas/cuttingcell/f-gran-neg-provider",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "https://example.com/assets/cuttingcell"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/sm/capability-description/f-gran-neg-provider/cuttingcell"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "CapabilityDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Formal Capability Description submodel for a test asset."
+        }
+      ],
+      "id": "https://example.com/ids/sm/capability-description/f-gran-neg-provider/cuttingcell",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/SubmodelTemplate/CapabilityDescription/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "CapabilitySet",
+          "description": [
+            {
+              "language": "en",
+              "text": "Container for the CuttingOfferedContainer property and its explanatory comment."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilitySet/1/0"
+              }
+            ]
+          },
+          "qualifiers": [],
+          "value": [
+            {
+              "idShort": "CuttingOfferedContainer",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Container for the Cutting property and its explanatory comment."
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityContainer/1/0"
+                  }
+                ]
+              },
+              "qualifiers": [],
+              "value": [
+                {
+                  "idShort": "Cutting",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Cutting capability represented with formal semantic identifiers and property sets."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "supplementalSemanticIds": [
+                    {
+                      "type": "ExternalReference",
+                      "keys": [
+                        {
+                          "type": "GlobalReference",
+                          "value": "https://example.com/semantic/capability/Cutting"
+                        }
+                      ]
+                    }
+                  ],
+                  "qualifiers": [
+                    {
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityRoleQualifier/Offered/1/0"
+                          }
+                        ]
+                      },
+                      "kind": "ValueQualifier",
+                      "type": "Offered",
+                      "valueType": "xs:boolean",
+                      "value": "true"
+                    }
+                  ],
+                  "modelType": "Capability"
+                },
+                {
+                  "idShort": "CapabilityComment",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Individual formal comment of the capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityComment/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "language": "en",
+                      "text": "Describes a cutting offered capability instance and the formal properties associated with it."
+                    }
+                  ],
+                  "modelType": "MultiLanguageProperty"
+                },
+                {
+                  "idShort": "CuttingWorkpieceClampingSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Container for the ClampingModeContainer property and its explanatory comment."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ClampingModeContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the ClampingMode property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Indicates the clamping mode represented by the cutting capability."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "ClampingMode",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Indicates the clamping mode represented by the cutting capability."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/ClampingMode"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "ClampingMode"
+                                  }
+                                ],
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Supported clamping mode for holding the workpiece during cutting."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:string",
+                          "value": "Mechanical",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "SupportedWorkpieceThicknessContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the SupportedWorkpieceThickness property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Explains the role of the SupportedWorkpieceThickness property in the capability description."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "SupportedWorkpieceThickness",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Supported workpiece thickness interval for the cutting process."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/SupportedWorkpieceThickness"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "SupportedWorkpieceThickness"
+                                  }
+                                ],
+                                "unit": "mm",
+                                "unitId": {
+                                  "type": "ExternalReference",
+                                  "keys": [
+                                    {
+                                      "type": "GlobalReference",
+                                      "value": "0112/2///62720#UAA862"
+                                    }
+                                  ]
+                                },
+                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
+                                "symbol": "mm",
+                                "dataType": "REAL_MEASURE",
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Supported workpiece thickness interval for the cutting process."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:float",
+                          "min": "0.5",
+                          "max": "5.0",
+                          "modelType": "Range"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "CuttingPathCapabilitySet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Container for the PathAccuracyContainer property and its explanatory comment."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "PathAccuracyContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the PathAccuracy property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Provides the path-following accuracy represented by the cutting capability."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "PathAccuracy",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Provides the path-following accuracy represented by the cutting capability."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/PathAccuracy"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "PathAccuracy"
+                                  }
+                                ],
+                                "unit": "mm",
+                                "unitId": {
+                                  "type": "ExternalReference",
+                                  "keys": [
+                                    {
+                                      "type": "GlobalReference",
+                                      "value": "0112/2///62720#UAA862"
+                                    }
+                                  ]
+                                },
+                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
+                                "symbol": "mm",
+                                "dataType": "REAL_MEASURE",
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Maximum cut-path following deviation."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:float",
+                          "value": "0.1",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "CuttingMaterialSeparationSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Container for the SupportedWorkpieceMaterialsContainer property and its explanatory comment."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "SupportedWorkpieceMaterialsContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the SupportedWorkpieceMaterials property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Lists material types or material families represented by the cutting capability."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "SupportedWorkpieceMaterials",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Lists material types or material families represented by the cutting capability."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/WorkpieceMaterial"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "typeValueListElement": "Property",
+                          "valueTypeListElement": "xs:string",
+                          "value": [
+                            {
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://example.com/semantic/property/WorkpieceMaterial"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "FR4",
+                              "modelType": "Property"
+                            },
+                            {
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://example.com/semantic/property/WorkpieceMaterial"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "Aluminium",
+                              "modelType": "Property"
+                            }
+                          ],
+                          "modelType": "SubmodelElementList"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "CuttingWidthContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the CuttingWidth property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Provides the cutting-width interval represented by the cutting capability."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "CuttingWidth",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Provides the cutting-width interval represented by the cutting capability."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/CuttingWidth"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "CuttingWidth"
+                                  }
+                                ],
+                                "unit": "mm",
+                                "unitId": {
+                                  "type": "ExternalReference",
+                                  "keys": [
+                                    {
+                                      "type": "GlobalReference",
+                                      "value": "0112/2///62720#UAA862"
+                                    }
+                                  ]
+                                },
+                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
+                                "symbol": "mm",
+                                "dataType": "REAL_MEASURE",
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Supported cutting width interval."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:float",
+                          "min": "0.8",
+                          "max": "3.0",
+                          "modelType": "Range"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "CuttingDepthRangeContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the CuttingDepthRange property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Provides the cutting-depth interval represented by the cutting capability."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "CuttingDepthRange",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Provides the cutting-depth interval represented by the cutting capability."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/CuttingDepthRange"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "CuttingDepthRange"
+                                  }
+                                ],
+                                "unit": "mm",
+                                "unitId": {
+                                  "type": "ExternalReference",
+                                  "keys": [
+                                    {
+                                      "type": "GlobalReference",
+                                      "value": "0112/2///62720#UAA862"
+                                    }
+                                  ]
+                                },
+                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
+                                "symbol": "mm",
+                                "dataType": "REAL_MEASURE",
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Supported cutting depth interval."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:float",
+                          "min": "0.1",
+                          "max": "2.0",
+                          "modelType": "Range"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "CapabilityRelations",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Container for the ComposedOfSet property and its explanatory comment."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityRelations/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ComposedOfSet",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the MainCompositionContainer property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/ComposedOfSet/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "MainCompositionContainer",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Container for the CapabilityComposedOf1 property and its explanatory comment."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/ComposedOfContainer/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "idShort": "CapabilityComposedOf1",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Composition relationship linking the main capability to one visible auxiliary capability."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityComposedOf/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "first": {
+                                "type": "ModelReference",
+                                "keys": [
+                                  {
+                                    "type": "SubmodelElement",
+                                    "value": "https://example.com/ids/sm/capability-description/f-gran-neg-provider/cuttingcell/CapabilitySet/CuttingOfferedContainer/Cutting"
+                                  }
+                                ]
+                              },
+                              "second": {
+                                "type": "ModelReference",
+                                "keys": [
+                                  {
+                                    "type": "SubmodelElement",
+                                    "value": "https://example.com/ids/sm/capability-description/f-gran-neg-provider/cuttingcell/CapabilitySet/PositioningOfferedContainer/Positioning"
+                                  }
+                                ]
+                              },
+                              "modelType": "RelationshipElement"
+                            },
+                            {
+                              "idShort": "ComposedOfComment",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Comment on the composition of a capability."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/ComposedOfComment/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "value": [
+                                {
+                                  "language": "en",
+                                  "text": "Describes the visible auxiliary capabilities associated with the composed cutting capability."
+                                }
+                              ],
+                              "modelType": "MultiLanguageProperty"
+                            }
+                          ],
+                          "modelType": "SubmodelElementCollection"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            },
+            {
+              "idShort": "PositioningOfferedContainer",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Container for the Positioning property and its explanatory comment."
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityContainer/1/0"
+                  }
+                ]
+              },
+              "qualifiers": [],
+              "value": [
+                {
+                  "idShort": "Positioning",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Auxiliary positioning capability represented with formal semantic identifiers and workspace properties."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "supplementalSemanticIds": [
+                    {
+                      "type": "ExternalReference",
+                      "keys": [
+                        {
+                          "type": "GlobalReference",
+                          "value": "https://example.com/semantic/capability/Positioning"
+                        }
+                      ]
+                    }
+                  ],
+                  "qualifiers": [
+                    {
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityRoleQualifier/Offered/1/0"
+                          }
+                        ]
+                      },
+                      "kind": "ValueQualifier",
+                      "type": "Offered",
+                      "valueType": "xs:boolean",
+                      "value": "true"
+                    }
+                  ],
+                  "modelType": "Capability"
+                },
+                {
+                  "idShort": "CapabilityComment",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Individual formal comment of the capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityComment/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "language": "en",
+                      "text": "Describes an auxiliary positioning capability and the workspace information associated with it."
+                    }
+                  ],
+                  "modelType": "MultiLanguageProperty"
+                },
+                {
+                  "idShort": "PositioningWorkspaceCapabilitySet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Container for the LimitXContainer property and its explanatory comment."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "LimitXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the LimitX property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Provides the reachable workspace interval along the X axis."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "LimitX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Provides the reachable workspace interval along the X axis."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/LimitX"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "LimitX"
+                                  }
+                                ],
+                                "unit": "mm",
+                                "unitId": {
+                                  "type": "ExternalReference",
+                                  "keys": [
+                                    {
+                                      "type": "GlobalReference",
+                                      "value": "0112/2///62720#UAA862"
+                                    }
+                                  ]
+                                },
+                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
+                                "symbol": "mm",
+                                "dataType": "REAL_MEASURE",
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Supported X-axis workspace interval of the Positioning capability."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:float",
+                          "min": "0.0",
+                          "max": "150.0",
+                          "modelType": "Range"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "LimitYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the LimitY property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Provides the reachable workspace interval along the Y axis."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "LimitY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Provides the reachable workspace interval along the Y axis."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/LimitY"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "LimitY"
+                                  }
+                                ],
+                                "unit": "mm",
+                                "unitId": {
+                                  "type": "ExternalReference",
+                                  "keys": [
+                                    {
+                                      "type": "GlobalReference",
+                                      "value": "0112/2///62720#UAA862"
+                                    }
+                                  ]
+                                },
+                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
+                                "symbol": "mm",
+                                "dataType": "REAL_MEASURE",
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Supported Y-axis workspace interval of the Positioning capability."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:float",
+                          "min": "0.0",
+                          "max": "150.0",
+                          "modelType": "Range"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "LimitZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the LimitZ property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Provides the reachable workspace interval along the Z axis."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "LimitZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Provides the reachable workspace interval along the Z axis."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/LimitZ"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "LimitZ"
+                                  }
+                                ],
+                                "unit": "mm",
+                                "unitId": {
+                                  "type": "ExternalReference",
+                                  "keys": [
+                                    {
+                                      "type": "GlobalReference",
+                                      "value": "0112/2///62720#UAA862"
+                                    }
+                                  ]
+                                },
+                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
+                                "symbol": "mm",
+                                "dataType": "REAL_MEASURE",
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Supported Z-axis workspace interval of the Positioning capability."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:float",
+                          "min": "0.0",
+                          "max": "60.0",
+                          "modelType": "Range"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "idShort": "Cutting",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Cutting"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturing capability for controlled material separation by removing or dividing material along a cutting path."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/Cutting",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Cutting"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Manufacturing capability for controlled material separation by removing or dividing material along a cutting path."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "Positioning",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Positioning"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Auxiliary capability for placing a workpiece, tool, or end-effector at a specified pose."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/Positioning",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Positioning"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Auxiliary capability for placing a workpiece, tool, or end-effector at a specified pose."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ClampingMode",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ClampingMode"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Clamping principle or mode supported by a cutting capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ClampingMode",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ClampingMode"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Clamping principle or mode supported by a cutting capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "CuttingDepthRange",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "CuttingDepthRange"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported cutting depth interval for a cutting capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/CuttingDepthRange",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "CuttingDepthRange"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported cutting depth interval for a cutting capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "CuttingWidth",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "CuttingWidth"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported width of the cut made by an offered cutting capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/CuttingWidth",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "CuttingWidth"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported width of the cut made by an offered cutting capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "LimitX",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "LimitX"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported X-axis workspace interval for the offered capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/LimitX",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "LimitX"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported X-axis workspace interval for the offered capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "LimitY",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "LimitY"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported Y-axis workspace interval for the offered capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/LimitY",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "LimitY"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported Y-axis workspace interval for the offered capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "LimitZ",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "LimitZ"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported Z-axis workspace interval for the offered capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/LimitZ",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "LimitZ"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported Z-axis workspace interval for the offered capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "PathAccuracy",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "PathAccuracy"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Maximum deviation from a prescribed path during path-following operations."
+        }
+      ],
+      "id": "https://example.com/semantic/property/PathAccuracy",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "PathAccuracy"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Maximum deviation from a prescribed path during path-following operations."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ProcessClass",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ProcessClass"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Formal process class represented by the capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ProcessClass",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ProcessClass"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Formal process class represented by the capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "SupportedWorkpieceThickness",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "SupportedWorkpieceThickness"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported thickness interval for the workpiece handled by the cutting capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/SupportedWorkpieceThickness",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "SupportedWorkpieceThickness"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported thickness interval for the workpiece handled by the cutting capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "WorkpieceMaterial",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "WorkpieceMaterial"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Material type or family handled by an offered cutting capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/WorkpieceMaterial",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "WorkpieceMaterial"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Material type or family handled by an offered cutting capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

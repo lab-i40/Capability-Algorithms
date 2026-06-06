@@ -1,0 +1,13 @@
+{
+    "test_id": "tc11n",
+    "matching_result": false,
+    "final_step": 1,
+    "sematic_matching_gt": {
+        "primary_capability": null,
+        "auxiliary_capabilities": [
+            "Positioning:PositioningOfferedContainer"
+        ],
+        "match": false
+    },
+    "requirement_matching_gt": {}
+}
