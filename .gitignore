@@ -295,6 +295,7 @@ npm-debug.log*
 *.bak
 *.orig
 
-# Reports (ignore only folder contents)
-reports/*
-!reports/.gitkeep
+# Reports (report/, singular) — ignore generated aggregates; keep the folder
+report/confusion_matrix.csv
+report/diagnostic-case.csv
+!report/.gitkeep
