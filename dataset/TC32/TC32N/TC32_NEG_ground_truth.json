@@ -1,0 +1,36 @@
+{
+    "test_id": "tc32n",
+    "matching_result": false,
+    "final_step": 2,
+    "sematic_matching_gt": {
+        "primary_capability": "Screwing:ScrewingOfferedContainer",
+        "auxiliary_capabilities": [],
+        "match": true
+    },
+    "requirement_matching_gt": {
+        "HousingCoverFastenerRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The offered fastener support is compatible with the requested metric M6 configuration and drive interface."
+        },
+        "HousingCoverTorqueRequirementSet": {
+            "verdict": "unsatisfied",
+            "justification": "The required torque is not covered by the provider's offered torque range."
+        },
+        "Point1RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required housing-cover screwing point is inside the provider's workspace."
+        },
+        "Point2RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required housing-cover screwing point is inside the provider's workspace."
+        },
+        "Point3RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required housing-cover screwing point is inside the provider's workspace."
+        },
+        "Point4RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required housing-cover screwing point is inside the provider's workspace."
+        }
+    }
+}

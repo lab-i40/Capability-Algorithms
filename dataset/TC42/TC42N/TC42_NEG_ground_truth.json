@@ -1,0 +1,40 @@
+{
+    "test_id": "tc42n",
+    "matching_result": false,
+    "final_step": 2,
+    "sematic_matching_gt": {
+        "primary_capability": "ManualScrewing:ManualScrewingOfferedContainer",
+        "auxiliary_capabilities": [],
+        "match": true
+    },
+    "requirement_matching_gt": {
+        "ResourceRequirementSet": {
+            "verdict": "unsatisfied",
+            "justification": "The requester requires robotic execution, while the offered capability is manual."
+        },
+        "ScrewingFastenerRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The offered manual screwing capability supports the requested fastener configuration."
+        },
+        "ScrewingTorqueRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required torque is inside the offered torque range."
+        },
+        "Point1RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point2RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point3RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point4RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "test_id": "tc42p",
+    "matching_result": true,
+    "final_step": 2,
+    "sematic_matching_gt": {
+        "primary_capability": "RobotScrewing:RobotScrewingOfferedContainer",
+        "auxiliary_capabilities": [],
+        "match": true
+    },
+    "requirement_matching_gt": {
+        "ScrewingFastenerRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The robotic screwing capability supports the requested fastener configuration."
+        },
+        "ScrewingTorqueRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required torque is inside the offered torque range."
+        },
+        "Point1RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point2RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point3RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        },
+        "Point4RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the offered workspace."
+        }
+    }
+}

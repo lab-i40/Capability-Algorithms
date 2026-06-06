@@ -11,7 +11,7 @@ from utils import get_capability_containers, merge_concept_descriptions, write_r
 
 
 def load_tc00_example() -> dict[str, Any]:
-    dataset_dir = Path(__file__).parent.parent / "dataset" / "tc00-example"
+    dataset_dir = Path(__file__).parent.parent / "dataset" / "TC11" / "TC11N"
     result: dict[str, Any] = {}
     for file in sorted(dataset_dir.glob("*.json")):
         with open(file, encoding="utf-8") as f:
@@ -25,12 +25,12 @@ def get_capability_set_from(filename: str, data: dict[str, Any]) -> list[dict[st
 
 
 async def main() -> None:
-    api_key = "tgp_v1_fITvZ-dz6vZ8W1aEMZLk8F2hOUqOcct_ZdgGy4RPJtk"
+    api_key = ""
 
     data = load_tc00_example()
 
-    provider_key = "A1_1_positive_Provider_screwing"
-    requester_key = "A1_1_positive_Requester_joining"
+    provider_key = "TC11_NEG_Provider_cutting"
+    requester_key = "TC11_NEG_Requester_screwing"
 
     provided_containers = get_capability_set_from(provider_key, data)
     required_containers = get_capability_set_from(requester_key, data)
@@ -47,6 +47,8 @@ async def main() -> None:
     output_path = Path(__file__).parent.parent / "result.txt"
     write_result(result, output_path)
     print(f"Result written to {output_path}")
+
+    print(result.semantic_response.result)
 
 
 if __name__ == "__main__":

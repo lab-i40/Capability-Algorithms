@@ -1,0 +1,32 @@
+{
+    "test_id": "tc22p",
+    "matching_result": true,
+    "final_step": 2,
+    "sematic_matching_gt": {
+        "primary_capability": "Screwing:ScrewingOfferedContainer",
+        "auxiliary_capabilities": [],
+        "match": true
+    },
+    "requirement_matching_gt": {
+        "JointRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The provider offers a joining-specialized process through Screwing, which can realize the requested joint between the specified components."
+        },
+        "JointPoint1Set": {
+            "verdict": "satisfied",
+            "justification": "The joint point is within the provider's screwing workspace."
+        },
+        "JointPoint2Set": {
+            "verdict": "satisfied",
+            "justification": "The joint point is within the provider's screwing workspace."
+        },
+        "JointPoint3Set": {
+            "verdict": "satisfied",
+            "justification": "The joint point is within the provider's screwing workspace."
+        },
+        "JointPoint4Set": {
+            "verdict": "satisfied",
+            "justification": "The joint point is within the provider's screwing workspace."
+        }
+    }
+}

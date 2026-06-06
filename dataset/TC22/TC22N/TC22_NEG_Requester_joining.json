@@ -2,10 +2,10 @@
   "assetAdministrationShells": [
     {
       "idShort": "BoardUMB",
-      "id": "https://example.com/ids/aas/0584_4110_6062_1202",
+      "id": "https://example.com/ids/aas/boardumb/i-proc-sub-neg-requester",
       "assetInformation": {
         "assetKind": "Instance",
-        "globalAssetId": "https://example.com/ids/asset/0584_4110_6062_1202"
+        "globalAssetId": "https://example.com/assets/boardumb"
       },
       "submodels": [
         {
@@ -13,7 +13,7 @@
           "keys": [
             {
               "type": "Submodel",
-              "value": "https://example.com/ids/sm/0584_4110_6062_1202"
+              "value": "https://example.com/ids/sm/capability-description/i-proc-sub-neg-requester/boardumb"
             }
           ]
         }
@@ -27,10 +27,10 @@
       "description": [
         {
           "language": "en",
-          "text": "Capability Description used as the semantic matching layer for the joining capability required by the product asset."
+          "text": "Informal Capability Description for a required joining capability, expressed with names and natural-language descriptions."
         }
       ],
-      "id": "https://example.com/ids/sm/0584_4110_6062_1202",
+      "id": "https://example.com/ids/sm/capability-description/i-proc-sub-neg-requester/boardumb",
       "kind": "Instance",
       "semanticId": {
         "type": "ExternalReference",
@@ -98,17 +98,6 @@
                       }
                     ]
                   },
-                  "supplementalSemanticIds": [
-                    {
-                      "type": "ExternalReference",
-                      "keys": [
-                        {
-                          "type": "GlobalReference",
-                          "value": "https://example.com/semantic/capability/Joining"
-                        }
-                      ]
-                    }
-                  ],
                   "qualifiers": [
                     {
                       "semanticId": {
@@ -127,26 +116,6 @@
                     }
                   ],
                   "modelType": "Capability"
-                },
-                {
-                  "idShort": "CapabilityComment",
-                  "semanticId": {
-                    "type": "ExternalReference",
-                    "keys": [
-                      {
-                        "type": "GlobalReference",
-                        "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityComment/1/0"
-                      }
-                    ]
-                  },
-                  "qualifiers": [],
-                  "value": [
-                    {
-                      "language": "en",
-                      "text": "The product requires physical joints between modeled components. The requirement is intentionally independent of a concrete joining method or implementation technology."
-                    }
-                  ],
-                  "modelType": "MultiLanguageProperty"
                 },
                 {
                   "idShort": "JointRequirementSet",
@@ -187,26 +156,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Number of components involved in the required connection."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "ComponentCount",
                           "description": [
                             {
@@ -214,15 +163,6 @@
                               "text": "Number of product components that must be connected by the requested joining capability."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/componentCount"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
                           "valueType": "xs:integer",
                           "value": "2",
@@ -251,26 +191,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Primary product component involved in the required joint."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "PrimaryComponent",
                           "description": [
                             {
@@ -278,15 +198,6 @@
                               "text": "Primary product component involved in the required joint."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/primaryComponent"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
                           "valueType": "xs:string",
                           "value": "MainProductBody",
@@ -315,26 +226,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Secondary product component that must be connected to the primary component."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "SecondaryComponent",
                           "description": [
                             {
@@ -342,82 +233,9 @@
                               "text": "Secondary product component that must be connected to the primary component."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/secondaryComponent"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
                           "valueType": "xs:string",
                           "value": "ComponentToBeJoined",
-                          "modelType": "Property"
-                        }
-                      ],
-                      "modelType": "SubmodelElementCollection"
-                    },
-                    {
-                      "idShort": "RequiredJointCountContainer",
-                      "description": [
-                        {
-                          "language": "en",
-                          "text": "Container for RequiredJointCount."
-                        }
-                      ],
-                      "semanticId": {
-                        "type": "ExternalReference",
-                        "keys": [
-                          {
-                            "type": "GlobalReference",
-                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
-                          }
-                        ]
-                      },
-                      "qualifiers": [],
-                      "value": [
-                        {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Number of joint points required by the product."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
-                          "idShort": "RequiredJointCount",
-                          "description": [
-                            {
-                              "language": "en",
-                              "text": "Number of joint points required by the product."
-                            }
-                          ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/requiredJointCount"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "valueType": "xs:integer",
-                          "value": "4",
                           "modelType": "Property"
                         }
                       ],
@@ -465,26 +283,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint1 on the X axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordX",
                           "description": [
                             {
@@ -492,57 +290,7 @@
                               "text": "Coordinate of JointPoint1 on the X axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordX"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordX"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordX."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "30.00",
                           "modelType": "Property"
@@ -570,26 +318,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint1 on the Y axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordY",
                           "description": [
                             {
@@ -597,57 +325,7 @@
                               "text": "Coordinate of JointPoint1 on the Y axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordY"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordY"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordY."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "32.50",
                           "modelType": "Property"
@@ -675,26 +353,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint1 on the Z axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordZ",
                           "description": [
                             {
@@ -702,57 +360,7 @@
                               "text": "Coordinate of JointPoint1 on the Z axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordZ"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordZ"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordZ."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "22.00",
                           "modelType": "Property"
@@ -802,26 +410,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint2 on the X axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordX",
                           "description": [
                             {
@@ -829,57 +417,7 @@
                               "text": "Coordinate of JointPoint2 on the X axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordX"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordX"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordX."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "30.00",
                           "modelType": "Property"
@@ -907,26 +445,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint2 on the Y axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordY",
                           "description": [
                             {
@@ -934,57 +452,7 @@
                               "text": "Coordinate of JointPoint2 on the Y axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordY"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordY"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordY."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "107.50",
                           "modelType": "Property"
@@ -1012,26 +480,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint2 on the Z axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordZ",
                           "description": [
                             {
@@ -1039,57 +487,7 @@
                               "text": "Coordinate of JointPoint2 on the Z axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordZ"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordZ"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordZ."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "22.00",
                           "modelType": "Property"
@@ -1139,26 +537,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint3 on the X axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordX",
                           "description": [
                             {
@@ -1166,57 +544,7 @@
                               "text": "Coordinate of JointPoint3 on the X axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordX"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordX"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordX."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "110.00",
                           "modelType": "Property"
@@ -1244,26 +572,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint3 on the Y axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordY",
                           "description": [
                             {
@@ -1271,57 +579,7 @@
                               "text": "Coordinate of JointPoint3 on the Y axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordY"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordY"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordY."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "32.50",
                           "modelType": "Property"
@@ -1349,26 +607,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint3 on the Z axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordZ",
                           "description": [
                             {
@@ -1376,57 +614,7 @@
                               "text": "Coordinate of JointPoint3 on the Z axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordZ"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordZ"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordZ."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "22.00",
                           "modelType": "Property"
@@ -1476,26 +664,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint4 on the X axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordX",
                           "description": [
                             {
@@ -1503,57 +671,7 @@
                               "text": "Coordinate of JointPoint4 on the X axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordX"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordX"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordX."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "110.00",
                           "modelType": "Property"
@@ -1581,26 +699,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint4 on the Y axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordY",
                           "description": [
                             {
@@ -1608,57 +706,7 @@
                               "text": "Coordinate of JointPoint4 on the Y axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordY"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordY"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordY."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "107.50",
                           "modelType": "Property"
@@ -1686,26 +734,6 @@
                       "qualifiers": [],
                       "value": [
                         {
-                          "idShort": "PropertyComment",
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
-                              }
-                            ]
-                          },
-                          "qualifiers": [],
-                          "value": [
-                            {
-                              "language": "en",
-                              "text": "Coordinate of JointPoint4 on the Z axis."
-                            }
-                          ],
-                          "modelType": "MultiLanguageProperty"
-                        },
-                        {
                           "idShort": "JointCoordZ",
                           "description": [
                             {
@@ -1713,57 +741,7 @@
                               "text": "Coordinate of JointPoint4 on the Z axis."
                             }
                           ],
-                          "semanticId": {
-                            "type": "ExternalReference",
-                            "keys": [
-                              {
-                                "type": "GlobalReference",
-                                "value": "https://example.com/semantic/joining/jointCoordZ"
-                              }
-                            ]
-                          },
                           "qualifiers": [],
-                          "embeddedDataSpecifications": [
-                            {
-                              "dataSpecification": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
-                                  }
-                                ]
-                              },
-                              "dataSpecificationContent": {
-                                "preferredName": [
-                                  {
-                                    "language": "en",
-                                    "text": "JointCoordZ"
-                                  }
-                                ],
-                                "unit": "mm",
-                                "unitId": {
-                                  "type": "ExternalReference",
-                                  "keys": [
-                                    {
-                                      "type": "GlobalReference",
-                                      "value": "0112/2///62720#UAA862"
-                                    }
-                                  ]
-                                },
-                                "sourceOfDefinition": "https://qudt.org/vocab/unit/MilliM",
-                                "symbol": "mm",
-                                "dataType": "REAL_MEASURE",
-                                "definition": [
-                                  {
-                                    "language": "en",
-                                    "text": "Unit reference for JointCoordZ."
-                                  }
-                                ],
-                                "modelType": "DataSpecificationIec61360"
-                              }
-                            }
-                          ],
                           "valueType": "xs:double",
                           "value": "22.00",
                           "modelType": "Property"
@@ -1905,26 +883,6 @@
                                 ]
                               },
                               "modelType": "Property"
-                            },
-                            {
-                              "idShort": "ConstraintComment",
-                              "semanticId": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintComment/1/0"
-                                  }
-                                ]
-                              },
-                              "qualifiers": [],
-                              "value": [
-                                {
-                                  "language": "en",
-                                  "text": "Before execution, the product components described by the joint requirement must be available to be connected."
-                                }
-                              ],
-                              "modelType": "MultiLanguageProperty"
                             },
                             {
                               "idShort": "ConstraintPropertyRelations",
@@ -2158,26 +1116,6 @@
                                 ]
                               },
                               "modelType": "Property"
-                            },
-                            {
-                              "idShort": "ConstraintComment",
-                              "semanticId": {
-                                "type": "ExternalReference",
-                                "keys": [
-                                  {
-                                    "type": "GlobalReference",
-                                    "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintComment/1/0"
-                                  }
-                                ]
-                              },
-                              "qualifiers": [],
-                              "value": [
-                                {
-                                  "language": "en",
-                                  "text": "Before execution, the modeled joint points must be reachable by the selected resource that will realize the joining capability."
-                                }
-                              ],
-                              "modelType": "MultiLanguageProperty"
                             },
                             {
                               "idShort": "ConstraintPropertyRelations",
@@ -2675,6 +1613,5 @@
       ],
       "modelType": "Submodel"
     }
-  ],
-  "conceptDescriptions": []
+  ]
 }
