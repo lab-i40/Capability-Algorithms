@@ -19,7 +19,7 @@ Follow these steps explicitly before producing the output:
 5. Format the result. Each provided Capability is a SubmodelElement whose modelType is Capability; it sits inside a SubmodelElementCollection (the Capability Container) whose idShort you also need. Emit one entry per capability as the string "CapabilityIdShort:CapabilityContainerIdShort". Set match to true only if at least one primary capability is aligned.
 
 ## Output format
-After your reasoning, respond with a single valid JSON object:
+After your reasoning, respond with a single valid JSON object (don't forget the triple backticks):
     - primary_capability: the single aligned primary capability entry ("CapabilityIdShort:CapabilityContainerIdShort"), or null if none is aligned.
     - auxiliary_capabilities: list of auxiliary capability entries ("CapabilityIdShort:CapabilityContainerIdShort") identified in the provided capabilities. Empty list if none.
     - match: true only if primary_capability is non-null.

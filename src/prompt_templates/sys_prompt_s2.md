@@ -20,7 +20,7 @@ Reason explicitly through the following steps. For each required property in the
    - Do NOT treat a need as satisfied because the resource "likely" supports it — absence of evidence is indeterminate, not satisfied.
 
 ## Output format
-After your reasoning, output a JSON block:
+After your reasoning, output a JSON block (don't forget the triple backticks):
 
 ```
 {
