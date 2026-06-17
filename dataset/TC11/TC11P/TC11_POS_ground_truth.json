@@ -1,0 +1,39 @@
+{
+    "test_id": "tc11p",
+    "matching_result": true,
+    "final_step": 2,
+    "sematic_matching_gt": {
+        "primary_capability": "Screwing:ScrewingOfferedContainer",
+        "auxiliary_capabilities": [
+            "Positioning:PositioningOfferedContainer",
+            "TorqueControl:TorqueControlOfferedContainer"
+        ],
+        "match": true
+    },
+    "requirement_matching_gt": {
+        "ScrewingFastenerRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required metric M6 machine screw and drive interface are covered by the provider's fastener compatibility information in ScrewingOfferedContainer."
+        },
+        "ScrewingTorqueRequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required torque is covered by TorqueControlOfferedContainer through its TorqueRange."
+        },
+        "Point1RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the workspace represented by PositioningOfferedContainer."
+        },
+        "Point2RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the workspace represented by PositioningOfferedContainer."
+        },
+        "Point3RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the workspace represented by PositioningOfferedContainer."
+        },
+        "Point4RequirementSet": {
+            "verdict": "satisfied",
+            "justification": "The required point is inside the workspace represented by PositioningOfferedContainer."
+        }
+    }
+}

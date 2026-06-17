@@ -1,0 +1,1617 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "BoardUMB",
+      "id": "https://example.com/ids/aas/boardumb/i-proc-sub-neg-requester",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "https://example.com/assets/boardumb"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/sm/capability-description/i-proc-sub-neg-requester/boardumb"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "CapabilityDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Informal Capability Description for a required joining capability, expressed with names and natural-language descriptions."
+        }
+      ],
+      "id": "https://example.com/ids/sm/capability-description/i-proc-sub-neg-requester/boardumb",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/SubmodelTemplate/CapabilityDescription/1/0"
+          }
+        ]
+      },
+      "qualifiers": [],
+      "submodelElements": [
+        {
+          "idShort": "CapabilitySet",
+          "description": [
+            {
+              "language": "en",
+              "text": "Set of capability containers for the product asset."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilitySet/1/0"
+              }
+            ]
+          },
+          "qualifiers": [],
+          "value": [
+            {
+              "idShort": "JoiningRequestedContainer",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Container for the requested joining capability and its descriptive elements."
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityContainer/1/0"
+                  }
+                ]
+              },
+              "qualifiers": [],
+              "value": [
+                {
+                  "idShort": "Joining",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Implementation-independent required capability for creating a physical connection between two or more product components without prescribing a concrete joining method, tool, material addition, fastener, or execution technology."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [
+                    {
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityRoleQualifier/Required/1/0"
+                          }
+                        ]
+                      },
+                      "kind": "ValueQualifier",
+                      "type": "Required",
+                      "valueType": "xs:boolean",
+                      "value": "true"
+                    }
+                  ],
+                  "modelType": "Capability"
+                },
+                {
+                  "idShort": "JointRequirementSet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Set of product-level properties that describe the required joint independently of a concrete joining method."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ComponentCountContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for ComponentCount."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ComponentCount",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Number of product components that must be connected by the requested joining capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:integer",
+                          "value": "2",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "PrimaryComponentContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for PrimaryComponent."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PrimaryComponent",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Primary product component involved in the required joint."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:string",
+                          "value": "MainProductBody",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "SecondaryComponentContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for SecondaryComponent."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "SecondaryComponent",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Secondary product component that must be connected to the primary component."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:string",
+                          "value": "ComponentToBeJoined",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "JointPoint1Set",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Requirements for JointPoint1, represented as the coordinates of one required joint point."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "JointCoordXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordX."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint1 on the X axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "30.00",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "JointCoordYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordY."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint1 on the Y axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "32.50",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "JointCoordZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordZ."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint1 on the Z axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "22.00",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "JointPoint2Set",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Requirements for JointPoint2, represented as the coordinates of one required joint point."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "JointCoordXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordX."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint2 on the X axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "30.00",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "JointCoordYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordY."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint2 on the Y axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "107.50",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "JointCoordZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordZ."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint2 on the Z axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "22.00",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "JointPoint3Set",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Requirements for JointPoint3, represented as the coordinates of one required joint point."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "JointCoordXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordX."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint3 on the X axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "110.00",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "JointCoordYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordY."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint3 on the Y axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "32.50",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "JointCoordZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordZ."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint3 on the Z axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "22.00",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "JointPoint4Set",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Requirements for JointPoint4, represented as the coordinates of one required joint point."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "JointCoordXContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordX."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordX",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint4 on the X axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "110.00",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "JointCoordYContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordY."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordY",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint4 on the Y axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "107.50",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "JointCoordZContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for JointCoordZ."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "JointCoordZ",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Coordinate of JointPoint4 on the Z axis."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:double",
+                          "value": "22.00",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                },
+                {
+                  "idShort": "CapabilityRelations",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Relations and constraints associated with this requested joining capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityRelations/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ConstraintSet",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Set of preconditions for applying or matching the requested joining capability."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintSet/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "ComponentsAvailablePrecondition",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Before execution, the product components described by the joint requirement must be available to be connected."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyConstraintContainer/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "idShort": "BasicConstraint",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Basic constraint used to validate the related properties."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyConstraintType/BasicConstraint/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "valueType": "xs:boolean",
+                              "value": "true",
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "ConstraintType",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Selected type of property constraint."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintType/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "BasicConstraint",
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "PropertyConditionalType",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Defines this condition as a precondition."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyConditionalType/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "Pre",
+                              "valueId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyConditionalType/Pre/1/0"
+                                  }
+                                ]
+                              },
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "ConstraintPropertyRelations",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Contains relationships between this property constraint and the properties that it constrains."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintPropertyRelations/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "value": [
+                                {
+                                  "idShort": "ConstraintHasProperty1",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/ComponentsAvailablePrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointRequirementSet/ComponentCountContainer/ComponentCount"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty2",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/ComponentsAvailablePrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointRequirementSet/PrimaryComponentContainer/PrimaryComponent"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty3",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/ComponentsAvailablePrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointRequirementSet/SecondaryComponentContainer/SecondaryComponent"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            }
+                          ],
+                          "modelType": "SubmodelElementCollection"
+                        },
+                        {
+                          "idShort": "JointPointReachabilityPrecondition",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Before execution, the modeled joint points must be reachable by the selected resource that will realize the joining capability."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyConstraintContainer/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "idShort": "BasicConstraint",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Basic constraint used to validate the related properties."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyConstraintType/BasicConstraint/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "valueType": "xs:boolean",
+                              "value": "true",
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "ConstraintType",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Selected type of property constraint."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintType/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "BasicConstraint",
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "PropertyConditionalType",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Defines this condition as a precondition."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyConditionalType/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "Pre",
+                              "valueId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyConditionalType/Pre/1/0"
+                                  }
+                                ]
+                              },
+                              "modelType": "Property"
+                            },
+                            {
+                              "idShort": "ConstraintPropertyRelations",
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Contains relationships between this property constraint and the properties that it constrains."
+                                }
+                              ],
+                              "semanticId": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintPropertyRelations/1/0"
+                                  }
+                                ]
+                              },
+                              "qualifiers": [],
+                              "value": [
+                                {
+                                  "idShort": "ConstraintHasProperty1",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint1Set/JointCoordXContainer/JointCoordX"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty2",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint1Set/JointCoordYContainer/JointCoordY"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty3",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint1Set/JointCoordZContainer/JointCoordZ"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty4",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint2Set/JointCoordXContainer/JointCoordX"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty5",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint2Set/JointCoordYContainer/JointCoordY"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty6",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint2Set/JointCoordZContainer/JointCoordZ"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty7",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint3Set/JointCoordXContainer/JointCoordX"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty8",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint3Set/JointCoordYContainer/JointCoordY"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty9",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint3Set/JointCoordZContainer/JointCoordZ"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty10",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint4Set/JointCoordXContainer/JointCoordX"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty11",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint4Set/JointCoordYContainer/JointCoordY"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                },
+                                {
+                                  "idShort": "ConstraintHasProperty12",
+                                  "description": [
+                                    {
+                                      "language": "en",
+                                      "text": "Relates this property constraint to a property or property set element that must be considered for the capability."
+                                    }
+                                  ],
+                                  "semanticId": {
+                                    "type": "ExternalReference",
+                                    "keys": [
+                                      {
+                                        "type": "GlobalReference",
+                                        "value": "https://admin-shell.io/idta/CapabilityDescription/ConstraintHasProperty/1/0"
+                                      }
+                                    ]
+                                  },
+                                  "qualifiers": [],
+                                  "first": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/CapabilityRelations/ConstraintSet/JointPointReachabilityPrecondition"
+                                      }
+                                    ]
+                                  },
+                                  "second": {
+                                    "type": "ModelReference",
+                                    "keys": [
+                                      {
+                                        "type": "SubmodelElement",
+                                        "value": "https://example.com/ids/sm/0584_4110_6062_1202/CapabilitySet/JoiningRequestedContainer/JointPoint4Set/JointCoordZContainer/JointCoordZ"
+                                      }
+                                    ]
+                                  },
+                                  "modelType": "RelationshipElement"
+                                }
+                              ],
+                              "modelType": "SubmodelElementCollection"
+                            }
+                          ],
+                          "modelType": "SubmodelElementCollection"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}

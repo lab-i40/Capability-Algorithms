@@ -1,0 +1,1827 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "RivetingCell",
+      "id": "https://example.com/ids/aas/rivetingcell/f-proc-sib-neg-provider",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "https://example.com/assets/rivetingcell"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/sm/capability-description/f-proc-sib-neg-provider/rivetingcell"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "CapabilityDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Formal Capability Description submodel for a test asset."
+        }
+      ],
+      "id": "https://example.com/ids/sm/capability-description/f-proc-sib-neg-provider/rivetingcell",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/SubmodelTemplate/CapabilityDescription/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "CapabilitySet",
+          "description": [
+            {
+              "language": "en",
+              "text": "Container for the RivetingOfferedContainer property and its explanatory comment."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilitySet/1/0"
+              }
+            ]
+          },
+          "qualifiers": [],
+          "value": [
+            {
+              "idShort": "RivetingOfferedContainer",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Container for the Riveting property and its explanatory comment."
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityContainer/1/0"
+                  }
+                ]
+              },
+              "qualifiers": [],
+              "value": [
+                {
+                  "idShort": "Riveting",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Riveting capability represented with formal semantic identifiers and property sets."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "supplementalSemanticIds": [
+                    {
+                      "type": "ExternalReference",
+                      "keys": [
+                        {
+                          "type": "GlobalReference",
+                          "value": "https://example.com/semantic/capability/Riveting"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExternalReference",
+                      "keys": [
+                        {
+                          "type": "GlobalReference",
+                          "value": "https://example.com/semantic/capability/Joining"
+                        }
+                      ]
+                    }
+                  ],
+                  "qualifiers": [
+                    {
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityRoleQualifier/Offered/1/0"
+                          }
+                        ]
+                      },
+                      "kind": "ValueQualifier",
+                      "type": "Offered",
+                      "valueType": "xs:boolean",
+                      "value": "true"
+                    }
+                  ],
+                  "modelType": "Capability"
+                },
+                {
+                  "idShort": "CapabilityComment",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Individual formal comment of the capability."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityComment/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "language": "en",
+                      "text": "Describes a riveting offered capability instance and the formal semantic references associated with it."
+                    }
+                  ],
+                  "modelType": "MultiLanguageProperty"
+                },
+                {
+                  "idShort": "RivetingCapabilitySet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Container for the ProcessClassContainer property and its explanatory comment."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "ProcessClassContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for the ProcessClass property and its explanatory comment."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "PropertyComment",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Individual comment for the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyComment/1/0"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "value": [
+                            {
+                              "language": "en",
+                              "text": "Identifies the process class represented by the capability property."
+                            }
+                          ],
+                          "modelType": "MultiLanguageProperty"
+                        },
+                        {
+                          "idShort": "ProcessClass",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Identifies the process class represented by the capability property."
+                            }
+                          ],
+                          "semanticId": {
+                            "type": "ExternalReference",
+                            "keys": [
+                              {
+                                "type": "GlobalReference",
+                                "value": "https://example.com/semantic/property/ProcessClass"
+                              }
+                            ]
+                          },
+                          "qualifiers": [],
+                          "embeddedDataSpecifications": [
+                            {
+                              "dataSpecification": {
+                                "type": "ExternalReference",
+                                "keys": [
+                                  {
+                                    "type": "GlobalReference",
+                                    "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+                                  }
+                                ]
+                              },
+                              "dataSpecificationContent": {
+                                "preferredName": [
+                                  {
+                                    "language": "en",
+                                    "text": "ProcessClass"
+                                  }
+                                ],
+                                "definition": [
+                                  {
+                                    "language": "en",
+                                    "text": "Formal process class offered by the provider."
+                                  }
+                                ],
+                                "modelType": "DataSpecificationIec61360"
+                              }
+                            }
+                          ],
+                          "valueType": "xs:string",
+                          "value": "Riveting",
+                          "modelType": "Property"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ],
+  "conceptDescriptions": [
+    {
+      "idShort": "Bolting",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Bolting"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Threaded-fastening capability that creates a detachable joint using a bolt or equivalent threaded fastener."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/Bolting",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Bolting"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Threaded-fastening capability that creates a detachable joint using a bolt or equivalent threaded fastener."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "CutPathFollowing",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "CutPathFollowing"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Capability information for following a prescribed cutting path."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/CutPathFollowing",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "CutPathFollowing"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Capability information for following a prescribed cutting path."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "Cutting",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Cutting"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturing capability for controlled material separation by removing or dividing material along a cutting path."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/Cutting",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Cutting"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Manufacturing capability for controlled material separation by removing or dividing material along a cutting path."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "HousingCoverScrewing",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "HousingCoverScrewing"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Product-specific screwing capability for fastening the housing cover of the BoardUMB product."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/HousingCoverScrewing",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "HousingCoverScrewing"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Product-specific screwing capability for fastening the housing cover of the BoardUMB product."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "Joining",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Joining"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Manufacturing capability for creating a physical connection between workpiece components without prescribing a concrete joining method."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/Joining",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Joining"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Manufacturing capability for creating a physical connection between workpiece components without prescribing a concrete joining method."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ManualScrewing",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ManualScrewing"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Resource-specific screwing capability executed by a manual or bench-mounted screwing station."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/ManualScrewing",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ManualScrewing"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Resource-specific screwing capability executed by a manual or bench-mounted screwing station."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "MaterialSeparation",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "MaterialSeparation"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Capability information for the physical separation of material during cutting."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/MaterialSeparation",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "MaterialSeparation"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Capability information for the physical separation of material during cutting."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "Positioning",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Positioning"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Auxiliary capability for placing a workpiece, tool, or end-effector at a specified pose."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/Positioning",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Positioning"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Auxiliary capability for placing a workpiece, tool, or end-effector at a specified pose."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "Riveting",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Riveting"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Joining capability that creates a mechanical joint by deforming a rivet."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/Riveting",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Riveting"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Joining capability that creates a mechanical joint by deforming a rivet."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "RobotScrewing",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "RobotScrewing"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Resource-specific screwing capability executed by an automated robotic screwdriver resource."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/RobotScrewing",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "RobotScrewing"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Resource-specific screwing capability executed by an automated robotic screwdriver resource."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ScrewFeeding",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ScrewFeeding"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Capability information for delivering a threaded fastener to the screwing tool or working point."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/ScrewFeeding",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ScrewFeeding"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Capability information for delivering a threaded fastener to the screwing tool or working point."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "Screwing",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "Screwing"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Joining capability that creates a detachable threaded connection by rotating and tightening a screw or equivalent threaded fastener."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/Screwing",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "Screwing"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Joining capability that creates a detachable threaded connection by rotating and tightening a screw or equivalent threaded fastener."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "TorqueApplication",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "TorqueApplication"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Auxiliary capability for applying controlled rotational torque during a screwing operation."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/TorqueApplication",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "TorqueApplication"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Auxiliary capability for applying controlled rotational torque during a screwing operation."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "WorkpieceClamping",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "WorkpieceClamping"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Capability information for fixing the workpiece during a material-processing operation."
+        }
+      ],
+      "id": "https://example.com/semantic/capability/WorkpieceClamping",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "WorkpieceClamping"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Capability information for fixing the workpiece during a material-processing operation."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "CuttingWidth",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "CuttingWidth"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported width of the cut made by an offered cutting capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/CuttingWidth",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "CuttingWidth"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported width of the cut made by an offered cutting capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "DriveInterfaceType",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "DriveInterfaceType"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Drive interface geometry required or supported by the screwing tool or fastener."
+        }
+      ],
+      "id": "https://example.com/semantic/property/DriveInterfaceType",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "DriveInterfaceType"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Drive interface geometry required or supported by the screwing tool or fastener."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ExecutionMode",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ExecutionMode"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Mode of execution associated with a resource-specific capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ExecutionMode",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ExecutionMode"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Mode of execution associated with a resource-specific capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "LimitX",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "LimitX"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported X-axis workspace interval for the offered capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/LimitX",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "LimitX"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported X-axis workspace interval for the offered capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "LimitY",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "LimitY"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported Y-axis workspace interval for the offered capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/LimitY",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "LimitY"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported Y-axis workspace interval for the offered capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "LimitZ",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "LimitZ"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported Z-axis workspace interval for the offered capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/LimitZ",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "LimitZ"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported Z-axis workspace interval for the offered capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ProcessClass",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ProcessClass"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Formal process class represented by the capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ProcessClass",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ProcessClass"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Formal process class represented by the capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "RequiredExecutionMode",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "RequiredExecutionMode"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Required execution mode for executing the capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/RequiredExecutionMode",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "RequiredExecutionMode"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Required execution mode for executing the capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "RequiredResourceClass",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "RequiredResourceClass"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Required class of resource for executing the capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/RequiredResourceClass",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "RequiredResourceClass"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Required class of resource for executing the capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "RequiredTorque",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "RequiredTorque"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Target tightening torque required by the product-specific or process-specific screwing operation."
+        }
+      ],
+      "id": "https://example.com/semantic/property/RequiredTorque",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "RequiredTorque"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Target tightening torque required by the product-specific or process-specific screwing operation."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ResourceClass",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ResourceClass"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Class of resource that realizes or is required to realize the capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ResourceClass",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ResourceClass"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Class of resource that realizes or is required to realize the capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ScrewingCoordX",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ScrewingCoordX"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "X coordinate of a required screwing point in the product coordinate system."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ScrewingCoordX",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ScrewingCoordX"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "X coordinate of a required screwing point in the product coordinate system."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ScrewingCoordY",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ScrewingCoordY"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Y coordinate of a required screwing point in the product coordinate system."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ScrewingCoordY",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ScrewingCoordY"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Y coordinate of a required screwing point in the product coordinate system."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ScrewingCoordZ",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ScrewingCoordZ"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Z coordinate of a required screwing point in the product coordinate system."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ScrewingCoordZ",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ScrewingCoordZ"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Z coordinate of a required screwing point in the product coordinate system."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ThreadDesignation",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ThreadDesignation"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Nominal thread designation required or supported by the screwing capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ThreadDesignation",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ThreadDesignation"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Nominal thread designation required or supported by the screwing capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ThreadPitch",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ThreadPitch"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Axial distance between adjacent thread crests required for the threaded fastener."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ThreadPitch",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ThreadPitch"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Axial distance between adjacent thread crests required for the threaded fastener."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ThreadSystem",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ThreadSystem"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Thread standard or system required or supported by the screwing capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ThreadSystem",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ThreadSystem"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Thread standard or system required or supported by the screwing capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "ThreadedFastenerType",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "ThreadedFastenerType"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Type of threaded fastener required or supported by the screwing capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/ThreadedFastenerType",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "ThreadedFastenerType"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Type of threaded fastener required or supported by the screwing capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "TorqueRange",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "TorqueRange"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Supported interval of tightening torque values offered by the resource capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/TorqueRange",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "TorqueRange"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Supported interval of tightening torque values offered by the resource capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    },
+    {
+      "idShort": "WorkpieceMaterial",
+      "displayName": [
+        {
+          "language": "en",
+          "text": "WorkpieceMaterial"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Material type or family handled by an offered cutting capability."
+        }
+      ],
+      "id": "https://example.com/semantic/property/WorkpieceMaterial",
+      "embeddedDataSpecifications": [
+        {
+          "dataSpecification": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIec61360/3/1"
+              }
+            ]
+          },
+          "dataSpecificationContent": {
+            "preferredName": [
+              {
+                "language": "en",
+                "text": "WorkpieceMaterial"
+              }
+            ],
+            "definition": [
+              {
+                "language": "en",
+                "text": "Material type or family handled by an offered cutting capability."
+              }
+            ],
+            "modelType": "DataSpecificationIec61360"
+          }
+        }
+      ],
+      "modelType": "ConceptDescription"
+    }
+  ]
+}

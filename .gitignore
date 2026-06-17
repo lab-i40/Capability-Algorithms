@@ -295,6 +295,7 @@ npm-debug.log*
 *.bak
 *.orig
 
-# Reports (ignore only folder contents)
-reports/*
-!reports/.gitkeep
+# Reports (report/, singular) — keep the folder.
+# report/confusion_matrix.csv and report/diagnostic-case.csv are tracked on purpose
+# (they back the results reported in the paper); do NOT ignore them.
+!report/.gitkeep

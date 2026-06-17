@@ -1,0 +1,17 @@
+test_id,dimension,formalism,ground_truth,predicted,situation,timestamp
+TC11N,granularity,formal,no_match,no_match,correct-clean,2026-06-06T01:38:03
+TC11P,granularity,formal,match,no_match,incorrect,2026-06-06T01:37:52
+TC12N,granularity,informal,no_match,no_match,correct-clean,2026-06-06T01:39:09
+TC12P,granularity,informal,match,no_match,incorrect,2026-06-06T01:38:57
+TC21N,process,formal,no_match,no_match,correct-clean,2026-06-06T01:39:54
+TC21P,process,formal,match,no_match,incorrect,2026-06-06T01:39:47
+TC22N,process,informal,no_match,no_match,correct-clean,2026-06-06T01:40:52
+TC22P,process,informal,match,no_match,incorrect,2026-06-06T01:40:43
+TC31N,product,formal,no_match,no_match,correct-with-recovery,2026-06-06T01:42:02
+TC31P,product,formal,match,no_match,incorrect,2026-06-06T01:41:30
+TC32N,product,informal,no_match,no_match,correct-with-recovery,2026-06-06T01:43:48
+TC32P,product,informal,match,no_match,incorrect,2026-06-06T01:42:59
+TC41N,resource,formal,no_match,no_match,correct-with-recovery,2026-06-06T01:45:12
+TC41P,resource,formal,match,no_match,incorrect,2026-06-06T01:44:26
+TC42N,resource,informal,no_match,no_match,correct-with-recovery,2026-06-06T01:46:52
+TC42P,resource,informal,match,no_match,incorrect,2026-06-06T01:46:04

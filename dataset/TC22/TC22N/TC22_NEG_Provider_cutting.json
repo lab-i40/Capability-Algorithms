@@ -1,0 +1,248 @@
+{
+  "assetAdministrationShells": [
+    {
+      "idShort": "CuttingCell",
+      "id": "https://example.com/ids/aas/cuttingcell/i-proc-sub-neg-provider",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "https://example.com/assets/cuttingcell"
+      },
+      "submodels": [
+        {
+          "type": "ModelReference",
+          "keys": [
+            {
+              "type": "Submodel",
+              "value": "https://example.com/ids/sm/capability-description/i-proc-sub-neg-provider/cuttingcell"
+            }
+          ]
+        }
+      ],
+      "modelType": "AssetAdministrationShell"
+    }
+  ],
+  "submodels": [
+    {
+      "idShort": "CapabilityDescription",
+      "description": [
+        {
+          "language": "en",
+          "text": "Informal Capability Description submodel. Terms are expressed mainly through names and short descriptions."
+        }
+      ],
+      "id": "https://example.com/ids/sm/capability-description/i-proc-sub-neg-provider/cuttingcell",
+      "kind": "Instance",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/SubmodelTemplate/CapabilityDescription/1/0"
+          }
+        ]
+      },
+      "submodelElements": [
+        {
+          "idShort": "CapabilitySet",
+          "description": [
+            {
+              "language": "en",
+              "text": "Groups the capability containers used in this test asset."
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilitySet/1/0"
+              }
+            ]
+          },
+          "qualifiers": [],
+          "value": [
+            {
+              "idShort": "CuttingOfferedContainer",
+              "description": [
+                {
+                  "language": "en",
+                  "text": "Container for one capability and its related information."
+                }
+              ],
+              "semanticId": {
+                "type": "ExternalReference",
+                "keys": [
+                  {
+                    "type": "GlobalReference",
+                    "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityContainer/1/0"
+                  }
+                ]
+              },
+              "qualifiers": [],
+              "value": [
+                {
+                  "idShort": "Cutting",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Capability named Cutting, described by plain-language metadata in this test case."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/Capability/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [
+                    {
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/CapabilityRoleQualifier/Offered/1/0"
+                          }
+                        ]
+                      },
+                      "kind": "ValueQualifier",
+                      "type": "Offered",
+                      "valueType": "xs:boolean",
+                      "value": "true"
+                    }
+                  ],
+                  "modelType": "Capability"
+                },
+                {
+                  "idShort": "CuttingCapabilitySet",
+                  "description": [
+                    {
+                      "language": "en",
+                      "text": "Groups values related to the cutting operation."
+                    }
+                  ],
+                  "semanticId": {
+                    "type": "ExternalReference",
+                    "keys": [
+                      {
+                        "type": "GlobalReference",
+                        "value": "https://admin-shell.io/idta/CapabilityDescription/PropertySet/1/0"
+                      }
+                    ]
+                  },
+                  "qualifiers": [],
+                  "value": [
+                    {
+                      "idShort": "SupportedWorkpieceMaterialsContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "SupportedWorkpieceMaterials",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Lists material types or material families represented by the cutting capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "typeValueListElement": "Property",
+                          "valueTypeListElement": "xs:string",
+                          "value": [
+                            {
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Plain-language property used to describe the capability."
+                                }
+                              ],
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "FR4",
+                              "modelType": "Property"
+                            },
+                            {
+                              "description": [
+                                {
+                                  "language": "en",
+                                  "text": "Plain-language property used to describe the capability."
+                                }
+                              ],
+                              "qualifiers": [],
+                              "valueType": "xs:string",
+                              "value": "Aluminium",
+                              "modelType": "Property"
+                            }
+                          ],
+                          "modelType": "SubmodelElementList"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    },
+                    {
+                      "idShort": "CuttingWidthContainer",
+                      "description": [
+                        {
+                          "language": "en",
+                          "text": "Container for one capability and its related information."
+                        }
+                      ],
+                      "semanticId": {
+                        "type": "ExternalReference",
+                        "keys": [
+                          {
+                            "type": "GlobalReference",
+                            "value": "https://admin-shell.io/idta/CapabilityDescription/PropertyContainer/1/0"
+                          }
+                        ]
+                      },
+                      "qualifiers": [],
+                      "value": [
+                        {
+                          "idShort": "CuttingWidth",
+                          "description": [
+                            {
+                              "language": "en",
+                              "text": "Plain-language range used to describe the capability."
+                            }
+                          ],
+                          "qualifiers": [],
+                          "valueType": "xs:float",
+                          "min": "0.8",
+                          "max": "3.0",
+                          "modelType": "Range"
+                        }
+                      ],
+                      "modelType": "SubmodelElementCollection"
+                    }
+                  ],
+                  "modelType": "SubmodelElementCollection"
+                }
+              ],
+              "modelType": "SubmodelElementCollection"
+            }
+          ],
+          "modelType": "SubmodelElementCollection"
+        }
+      ],
+      "modelType": "Submodel"
+    }
+  ]
+}
